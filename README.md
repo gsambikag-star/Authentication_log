@@ -46,28 +46,56 @@ Authentication_Log_Monitor/
 └── .gitignore
 ```
 
-## Features Completed – Stage 1
+## Features Completed
 
-### Phase 1: Project Setup
+### Stage 1: Foundation – Completed
+
+**Phase 1: Project Setup**
 - Created the project directory and folder structure.
 - Set up a Python virtual environment.
 - Created the required Python files.
 
-### Phase 2: Authentication Log Dataset
+**Phase 2: Authentication Log Dataset**
 - Created a synthetic SSH authentication log file.
 - Included successful and failed login attempts.
 - Included different usernames and IP addresses.
 
-### Phase 3: Log Parsing
+**Phase 3: Log Parsing**
 - Used regular expressions to extract information from log entries.
 - Extracted timestamps, usernames, IP addresses, login statuses, and port numbers.
 - Identified invalid log entries.
 
-### Phase 4: Failed Login Detection
+**Phase 4: Failed Login Detection**
 - Identified failed login attempts.
-- Counted failed attempts by IP address.
-- Counted failed attempts by username.
-- Identified IP addresses reaching the configured failure threshold.
+- Counted failed attempts by IP address and username.
+- Identified suspicious IP addresses using a configurable failure threshold.
+
+### Stage 2: Anomaly Detection – Completed
+
+**Phase 5.1: Repeated Login Failure Analysis**
+- Identifies IP addresses making 3 or more failed login attempts within 60 seconds.
+- Groups failed attempts by IP address.
+- Flags suspicious repeated login activity.
+
+**Phase 5.2: Off-Hours Login Detection**
+- Detects authentication attempts outside normal working hours.
+- Considers 6:00 AM to 10:00 PM as normal working hours.
+- Identifies both successful and failed login attempts during off-hours.
+
+**Phase 5.3: Rapid Login Attempt Detection**
+- Identifies IP addresses making 3 or more login attempts within 10 seconds.
+- Considers both successful and failed authentication attempts.
+- Helps identify potentially automated or brute-force login activity.
+
+## Project Status
+
+- Stage 1 – Foundation: Completed
+- Stage 2 – Anomaly Detection: Completed
+- Stage 3 – Risk Analysis: Upcoming
+- Stage 4 – Automated Report Generation: Upcoming
+
+The project currently supports authentication log parsing, failed login detection, and anomaly detection using synthetic SSH authentication logs.
+
 
 ## How to Run the Project
 
@@ -110,13 +138,6 @@ The current failed-login detection threshold is **5 attempts**.
 
 An IP address is flagged as suspicious when it has 5 or more failed login attempts in the analyzed log file.
 
-## Project Status
-
-**Stage 1 – Completed**
-
-The initial setup, synthetic log generation, log parsing, and failed login detection have been implemented.
-
-Further stages will add anomaly detection, risk analysis, and automated report generation.
 
 ## Disclaimer
 
