@@ -1,0 +1,16 @@
+
+Nov 25 09:10:12 server sshd[101]: Failed password for admin from 192.168.1.10 port 5021 ssh2
+Nov 25 09:10:15 server sshd[102]: Failed password for admin from 192.168.1.10 port 5022 ssh2
+Nov 25 09:10:18 server sshd[103]: Failed password for admin from 192.168.1.10 port 5023 ssh2
+Nov 25 09:10:20 server sshd[104]: Failed password for root from 192.168.1.20 port 5024 ssh2
+Nov 25 09:10:25 server sshd[105]: Accepted password for user1 from 192.168.1.30 port 5025 ssh2
+Nov 25 09:10:30 server sshd[106]: Failed password for admin from 192.168.1.10 port 5026 ssh2
+Nov 25 09:10:32 server sshd[107]: Failed password for root from 192.168.1.10 port 5027 ssh2
+Nov 25 09:10:35 server sshd[108]: Failed password for test from 192.168.1.10 port 5028 ssh2
+Nov 25 09:10:40 server sshd[109]: Failed password for guest from 192.168.1.10 port 5029 ssh2
+Nov 25 09:10:45 server sshd[110]: Failed password for admin from 192.168.1.20 port 5030 ssh2
+Nov 25 14:30:12 server sshd[111]: Accepted password for user2 from 192.168.1.40 port 5031 ssh2
+Nov 25 02:30:12 server sshd[112]: Failed password for admin from 192.168.1.50 port 5032 ssh2
+Nov 25 02:30:15 server sshd[113]: Failed password for admin from 192.168.1.50 port 5033 ssh2
+Nov 25 02:30:18 server sshd[114]: Accepted password for admin from 192.168.1.50 port 5034 ssh2
+Nov 25 23:45:12 server sshd[115]: Failed password for root from 192.168.1.60 port 5035 ssh2
