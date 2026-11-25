@@ -1,12 +1,14 @@
 
+
 from collections import Counter
 
-from log_parser import read_logs
-from anomaly_detector import (
+from src.log_parser import read_logs
+from src.anomaly_detector import (
     detect_repeated_failures,
     detect_off_hours_logins,
     detect_rapid_attempts
 )
+
 
 
 def calculate_risk_scores(logs):
